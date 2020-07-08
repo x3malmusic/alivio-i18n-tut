@@ -1,0 +1,19 @@
+.locale-changer {
+  text-align: center;
+  padding-top: 17px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: $logo_color;
+  cursor: pointer;
+  transition: transform .2s ease-in;
+  font-size: $font-main;
+  font-weight: bolder;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

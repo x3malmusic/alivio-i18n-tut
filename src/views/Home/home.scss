@@ -1,0 +1,330 @@
+//section 1
+.home {
+  padding: 175px 15px 336px 15px;
+
+  .main-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("../../assets/images/BG.png");
+    background-size: cover;
+    z-index: -1;
+  }
+
+  &-main-text {
+    width: 35%;
+    font-size: $font-main;
+
+    h1 {
+      font-size: $font-h1;
+      color: $logo_color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (max-width: 1196px){
+    padding: 100px 15px 200px 15px;
+
+    &-main-text {
+      width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 992px){
+    padding: 75px 15px 150px 15px;
+
+    &-main-text {
+      width: 50%;
+    }
+
+    .main-bg {
+      background-position: 25%;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    padding: 50px 15px 100px 15px;
+
+    h1 {
+      font-size: $font-h2;
+      line-height: $font-h2;
+    }
+
+    .main-bg {
+      background-position: 35%;
+    }
+  }
+
+  @media screen and (max-width: 597px){
+
+    &-main-text {
+      width: 65%;
+    }
+  }
+
+  @media screen and (max-width: 475px){
+
+    &-main-text {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 375px){
+
+    &-main-text {
+      width: 100%;
+    }
+  }
+}
+
+//section 2
+
+.how-it-works {
+  padding: 145px 15px;
+
+  strong {
+    font-size: $font-main;
+  }
+
+  h2 {
+    color: $logo_color;
+    font-size: $font-h2;
+  }
+
+  p {
+    font-size: $font-main;
+    font-weight: 500;
+  }
+
+  .col-5, .col-md-12, .col-12, .col-lg-5 {
+    padding: 0;
+  }
+
+  .card-container {
+    margin-top: 135px;
+    height: 800px;
+
+
+    .align-start {
+      align-self: flex-start;
+    }
+
+    .align-center {
+      align-self: center;
+    }
+
+    .align-end {
+      align-self: flex-end;
+    }
+
+    .card {
+      border: none;
+      width: 28%;
+
+      h3 {
+        margin-bottom: 50px;
+        font-weight: bold;
+      }
+
+      p {
+        margin-bottom: 40px;
+        font-weight: 500;
+      }
+
+      .image {
+        max-width: 390px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .numImage {
+        top: -56px;
+        left: 11px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1196px){
+    padding: 100px 15px;
+  }
+
+  @media screen and (max-width: 768px){
+    padding: 50px 15px;
+    text-align: center;
+
+    & strong {
+      margin: 0 auto;
+    }
+
+    .section-2-text {
+      flex-direction: column;
+      text-align: center;
+
+      & h2 {
+        font-size: $font-logo;
+        margin-bottom: 30px;
+      }
+    }
+
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 120px;
+      height: auto;
+
+      .card {
+        width: 100% !important;
+        margin-bottom: 130px;
+
+        .numImage {
+          left: 50%;
+          transform: translateX(-145px);
+        }
+
+        &:last-child {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+
+}
+
+//section 3
+
+.about {
+  padding: 145px 15px;
+  background: $footer-bg;
+
+  h2 {
+    font-size: $font-h2;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: $font-main;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  img {
+    height: 100%;
+  }
+
+  .col-12, .col-md-5, .col-md-7 {
+    padding: 0;
+  }
+
+  &-text {
+    box-sizing: border-box;
+    padding-right: 15px !important;
+  }
+
+
+  @media screen and (max-width: 1196px){
+    padding: 100px 15px;
+  }
+
+  @media screen and (max-width: 768px){
+
+    padding: 50px 15px;
+    text-align: center;
+
+    h2, p {
+      margin-bottom: 25px;
+    }
+
+    img {
+      margin-top: 30px;
+    }
+
+    &-content {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+
+    h2 {
+      font-size: $font-logo;
+    }
+
+  }
+
+
+
+}
+
+//section 4
+
+.our-product {
+  padding: 145px 15px;
+
+  p:first-child {
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: $font-main;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-size: $font-h2;
+    margin-bottom: 20px;
+  }
+
+  &-container {
+    max-width: 1092px;
+    width: 100%;
+  }
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    padding-right: 15px;
+  }
+
+  &-card-img {
+    width: 40%;
+    position: absolute;
+    bottom: -45px;
+    left: -25px;
+  }
+
+  .col-12, .col-md-6 {
+    padding: 0;
+  }
+
+
+  @media screen and (max-width: 1196px){
+    padding: 100px 15px;
+  }
+
+  @media screen and (max-width: 768px){
+    padding: 50px 15px;
+    text-align: center;
+
+    &-container {
+      flex-direction: column;
+    }
+
+    &-text {
+      margin-top: 50px;
+    }
+
+    &-img {
+      padding-right: 0;
+    }
+
+    h2 {
+      font-size: $font-logo;
+    }
+  }
+
+}

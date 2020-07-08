@@ -1,0 +1,15 @@
+.button {
+  background-color: $logo_color;
+  color: #fff;
+  border: none;
+  padding: 13px 50px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: $font-main;
+  transition: background-color .2s ease-in;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #01c38c;
+  }
+}

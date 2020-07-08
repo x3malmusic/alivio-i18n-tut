@@ -1,0 +1,41 @@
+.footer {
+  background: $footer-bg;
+
+  .logo {
+    font-size: $font-logo;
+    line-height: $font-logo;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 75px;
+  }
+
+  div {
+    padding: 30px 15px;
+  }
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      font-size: $font-main;
+      transition: transform .2s ease-in;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  @media screen and (max-width: 636px){
+
+  }
+}
