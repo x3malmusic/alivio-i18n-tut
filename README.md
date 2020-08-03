@@ -1,19 +1,7 @@
-# alivio-i18n-tut
-
-## Project setup
-```
-npm install
-```
-
 ### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+working app - https://5f276dcec63401fadb298a5e--festive-hermann-07d3d6.netlify.app
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
